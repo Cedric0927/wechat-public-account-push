@@ -5,63 +5,7 @@
  * 如若想使用更多功能，请查考文档中的 【3. config参数说明】 
  * 自行添加属性，以支持更多个性化功能
  */
-const USER_CONFIG = {
-
-  // 使用微信测试号：公众号APP_ID
-  APP_ID: 'wx99fd9a9116bb7882',
-
-  // 使用微信测试号：公众号APP_SECRET
-  APP_SECRET: 'd3e78df43ad569bd736adf5673d00c5e',
-
-  PROVINCE: '浙江',
-  CITY: '台州',
-
-  USERS: [
-    {
-      // 想要发送的人的名字
-      name: '宝贝',
-      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'ootVV6vE6emaWzWcA5cYDgK0em1g',
-      // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'SzWUGvwW6Mo9hwMRpUQC5mMX3SRm56JWUd5c4xANpik',
-      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '09-27',
-      festivals: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {
-          type: '*生日', name: '宝贝', year: '1998', date: '09-27',
-        },
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
-        },
-        {
-          type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
-        },
-      ],
-      // 我们在一起已经有xxxx天了的配置
-      customizedDateList: [
-        // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
-      ],
-    },
-  ],
-
-
-  // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: 'SzWUGvwW6Mo9hwMRpUQC5mMX3SRm56JWUd5c4xANpik',
-
-  CALLBACK_USERS: [
-    {
-      name: '自己',
-      // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'ootVV6vE6emaWzWcA5cYDgK0em1g',
-    }
-  ],
-
-}
+const USER_CONFIG = {"APP_ID":"wx99fd9a9116bb7882","APP_SECRET":"d3e78df43ad569bd736adf5673d00c5e","IS_SHOW_COLOR":true,"CALLBACK_TEMPLATE_ID":"","CALLBACK_USERS":[{"name":"自己","id":""}],"USERS":[{"name":"宝贝","id":"ootVV6uVB8VPgXVmljXinqnnXdqI","useTemplateId":"Nr1iupp_V_FvOfvAkPWgxfoMUtdn0G5LfO7Er0gGWPA","province":"浙江","city":"台州","horoscopeDate":"06-13","horoscopeDateType":"今日","openUrl":"https://www.baidu.com/s?ie=UTF-8&wd=%E4%BB%8A%E5%A4%A9%E4%B9%9F%E8%A6%81%E5%BC%80%E5%BF%83%E5%91%80","festivals":[{"type":"生日","name":"生日","date":"06-13","year":"2023"}],"customizedDateList":[]}],"SWITCH":{"weather":true,"holidaytts":true,"CIBA":true,"oneTalk":true,"earthyLoveWords":false,"momentCopyrighting":false,"poisonChickenSoup":false,"poetry":false,"horoscope":true,"birthdayMessage":true}}
 
 module.exports = USER_CONFIG
 
